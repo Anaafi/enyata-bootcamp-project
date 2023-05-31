@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,7 +12,56 @@
       rel="stylesheet"
     />
     <script src="index.js" defer></script>
-    <title>Document</title>
+    <title>GameLoft</title>
   </head>
-  <body></body>
+  <body>
+
+    <header class="title">
+      <h1>GameLoft</h1>
+    </header>
+
+    <section class="gameBanner">
+      <img class="bannerImage" src="./assets/banner.jpeg" alt="Game Banner"/>
+      <div class="gameWelcome">
+        <h2>Welcome to <br><span>GameLoft</span></h2>
+      </div>
+    </section>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#" class="signUp">Sign Up</a> </li>
+        <li><a href="#">Latest News</a></li>
+        <li><a href="#latestReleases">New Releases</a></li>
+        <li><a href="#joinToday">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="info">
+      <article>
+        <h2 id="latestReleases">Latest Realeases</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptatum aspernatur repudiandae possimus in laboriosam, harum ea maxime dolorum accusamus? Odit tempora velit repellat, et aliquam facere vero perspiciatis veniam!</p>
+      </article>
+      <ul class="gameImages">
+        <li><img src="./assets/game1.jpeg" alt="Red Dead Redemption"/></li>
+        <li><img src="./assets/game2.jpeg" alt="Grand Theft Auto"/></li>
+        <li><img src="./assets/game3.jpeg" alt="Midnight Club II"/></li>
+      </ul>
+    </section>
+    
+    <section class="signUpPage" id="joinToday">
+      <h2>Join Today</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      <p class="error">Please fields can't be empty</p>
+      <form action="">
+        <input type="text" name="fname" id="fname" placeholder="Enter your name">
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+        <button type="submit" class="submitButton">Submit</button>
+      </form>
+    </section>
+
+    <footer>
+      <p class="copyright">Copyright &copy; 2022 GameLoft</p>
+    </footer>
+
+  </body>
 </html>
